@@ -95,7 +95,7 @@ img {
   opacity: 0.75;
 }
 
-.project .links-overlay button {
+button {
   background: #08d665;
 }
 
@@ -124,6 +124,36 @@ img {
 
 #about-section p {
   font-size: 20px;
+}
+
+/* Footer Styles */
+#footer {
+  background-color: #333;
+}
+
+#footer button {
+  background-color: #06ad51;
+}
+
+#footer li a i {
+  width: 20px;
+  color: #fff;
+}
+
+#footer li a i:hover {
+  color: #009438;
+  transition: ease-in 0.5s;
+}
+
+#footer button a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#footer button:hover {
+  background-color: #009438;
+  font-size: 1.2rem;
+  transition: ease-in 0.5s;
 }
 
 /* Media Queries */
