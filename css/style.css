@@ -108,3 +108,40 @@ img {
   display: flex;
   cursor: pointer;
 }
+
+/* About Section Styles */
+
+.about-lead {
+  font-size: 55px;
+  font-weight: 700;
+  padding-right: 23%;
+}
+
+#about-section img {
+  width: 220px;
+  border: 3px solid #000;
+}
+
+#about-section p {
+  font-size: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 575px) {
+  #navbarToggler.show li {
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+  }
+}
+
+@media (max-width: 900px) {
+  #about-section {
+    margin: 0 auto !important;
+    text-align: center;
+  }
+
+  .about-lead {
+    padding: 20px 30px;
+    text-align: center;
+  }
+}
