@@ -47,7 +47,9 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon active">0</span>
+            <span class="navbar-toggler-icon active"
+              ><i class="fa fa-bars fa-lg"></i
+            ></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarToggler">
@@ -56,21 +58,26 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#portfolio-section">Portfolio</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about-section">About</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#footer">Contact</a>
               </li>
             </ul>
           </div>
         </nav>
         <!-- Hero Inner Container Ends -->
-        <div class="hero-text">
-          <h1>I am Scott</h1>
-          <h4>I specialize in full-stack web development.</h4>
+        <div class="hero-text-container">
+          <div class="hero-text">
+            <h1>I am Scott</h1>
+            <h4 class="my-4">I specialize in full-stack web development.</h4>
+            <button class="btn btn-contact mt-2">
+              <a href="#portfolio-section" class="p-3">View My Work</a>
+            </button>
+          </div>
         </div>
       </div>
     </div>

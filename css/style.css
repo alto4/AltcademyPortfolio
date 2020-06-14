@@ -2,6 +2,9 @@
   i)
   ii)
 */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: #000;
@@ -68,6 +71,20 @@ img {
 #navbarToggler.show li {
   text-align: center;
 }
+
+/* Hero Section Styles */
+
+.hero-text-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hero-text {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  color: #fff !important;
+}
 /* Portfolio Section Styles */
 .bg-light {
   background-color: #fff !important;
@@ -129,6 +146,7 @@ button {
 /* Footer Styles */
 #footer {
   background-color: #333;
+  padding: 20px;
 }
 
 #footer button {
@@ -145,12 +163,13 @@ button {
   transition: ease-in 0.5s;
 }
 
-#footer button a {
-  color: #fff;
+button a {
+  color: #fff !important;
   font-size: 1.2rem;
+  font-weight: 700;
 }
 
-#footer button:hover {
+button:hover {
   background-color: #009438;
   font-size: 1.2rem;
   transition: ease-in 0.5s;
