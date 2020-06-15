@@ -37,7 +37,9 @@
       <div class="container">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-sm text-white">
-          <a class="navbar-brand font-weight-bold" href="#">Scott Alton</a>
+          <a class="navbar-brand font-weight-bold" href="#"
+            >&lt; S <span class="green">/</span> A &gt;</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -72,10 +74,26 @@
         <!-- Hero Inner Container Ends -->
         <div class="hero-text-container">
           <div class="hero-text">
-            <h1>I am Scott</h1>
+            <h1 class="hero-lead">I am Scott</h1>
             <h4 class="my-4">I specialize in full-stack web development.</h4>
+            <button class="btn btn-contact mt-2 px-4">
+              <a
+                href="https://www.linkedin.com/in/scott-alton-6454b4190/"
+                target="_blank"
+                ><i class="fa fa-github"></i
+              ></a>
+            </button>
             <button class="btn btn-contact mt-2">
-              <a href="#portfolio-section" class="p-3">View My Work</a>
+              <a href="#portfolio-section" class="p-3"
+                >View My Work <i class="fa fa-chevron-down"></i
+              ></a>
+            </button>
+            <button class="btn btn-contact mt-2 px-4">
+              <a
+                href="https://www.linkedin.com/in/scott-alton-6454b4190/"
+                target="_blank"
+                ><i class="fa fa-linkedin"></i
+              ></a>
             </button>
           </div>
         </div>
@@ -84,7 +102,7 @@
 
     <div class="container bg-dark text-white">
       <!-- Portfolio Section -->
-      <div class="p-4" id="portfolio-section">
+      <div class="px-4 py-5" id="portfolio-section">
         <div class="section-title text-center pt-5 pb-3">
           <h2 class="font-weight-bold">My Work</h2>
           <p>Check out some of the projects that I have worked on.</p>
@@ -119,7 +137,7 @@
                 </div>
               </div>
               <div class="description p-2">
-                <h4>Technologies Used:</h4>
+                <h4 class="p-2">Technologies Used:</h4>
                 <i class="devicon-html5-plain mx-3"></i>
                 <i class="devicon-css3-plain mx-3"></i>
                 <i class="devicon-bootstrap-plain mx-3"></i>
@@ -155,7 +173,7 @@
                 </div>
               </div>
               <div class="description p-2">
-                <h4>Technologies Used:</h4>
+                <h4 class="p-2">Technologies Used:</h4>
                 <i class="devicon-html5-plain mx-3"></i>
                 <i class="devicon-css3-plain mx-3"></i>
                 <i class="devicon-bootstrap-plain mx-3"></i>
@@ -192,7 +210,7 @@
               </div>
 
               <div class="description p-2">
-                <h4>Technologies Used:</h4>
+                <h4 class="p-2">Technologies Used:</h4>
                 <i class="devicon-html5-plain mx-3"></i>
                 <i class="devicon-css3-plain mx-3"></i>
               </div>
@@ -219,7 +237,7 @@
                 </div>
               </div>
               <div class="description p-2">
-                <h4>Technologies Used:</h4>
+                <h4 class="p-2">Technologies Used:</h4>
                 <i class="devicon-html5-plain mx-3"></i>
                 <i class="devicon-css3-plain mx-3"></i>
                 <i class="devicon-javascript-plain mx-3"></i>
@@ -247,7 +265,7 @@
                 </div>
               </div>
               <div class="description p-2">
-                <h4>Technologies Used:</h4>
+                <h4 class="p-2">Technologies Used:</h4>
                 <i class="devicon-html5-plain mx-3"></i>
                 <i class="devicon-css3-plain mx-3"></i>
                 <i class="devicon-javascript-plain mx-3"></i>
@@ -277,7 +295,7 @@
               </div>
 
               <div class="description p-2">
-                <h4>Technologies Used:</h4>
+                <h4 class="p-2">Technologies Used:</h4>
                 <i class="devicon-html5-plain mx-3"></i>
                 <i class="devicon-css3-plain mx-3"></i>
                 <i class="devicon-react-plain mx-3"></i>
@@ -290,23 +308,24 @@
     </div>
 
     <!-- About Section -->
-    <section class="text-dark bg-light p-4" id="about-section">
+    <section class="text-dark bg-light p-5" id="about-section">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="pt-5 pb-3">
-              <h3 class="font-weight-bold px-5 px-xl-0">About Me</h3>
-              <h1 class="about-lead my-4 px-5 px-xl-0">
-                I love to build things from the ground up.
+            <div class="pt-5 pb-3 px-1 about-text">
+              <h3 class="font-weight-bold px-2 px-xl-0">About Me</h3>
+              <h1 class="about-lead my-4 px-2 px-xl-0">
+                I love to build<br />things from the<br />ground up.
               </h1>
-              <p class="px-5 px-xl-0">
+              <p class="px-2 px-xl-0">
                 Ever since I can remember, I have always enjoyed creating things
-                from scratch. This lead me to careers as both a passionate
-                musician and as a chef, where I could create things that make
-                people happier and allow me to express myself in a creative and
-                tangible way. My first encounter with coding immediately ignited
-                a desire to pursue web development as a career, and this desire
-                stems from the same drive to create things from scratch.
+                from scratch. This has led me to work as both a professional
+                musician and as a chef, where I have always enjoyed making
+                things that make people happier and allow me to express myself
+                in a creative and tangible way. My first encounter with coding
+                immediately ignited a desire to pursue web development as a
+                career, and this desire stems from the same drive to create
+                things from scratch.
               </p>
             </div>
           </div>
@@ -323,9 +342,11 @@
       </div>
     </section>
 
-    <footer id="footer" class="w-100 pt-5 pb-3">
+    <section id="contact-section" class="w-100 py-5">
       <div class="container text-center">
-        <div class="d-flex justify-content-between align-items-center">
+        <div
+          class="d-flex justify-content-between align-items-center px-2 px-xl-0"
+        >
           <button class="btn btn-contact">
             <a href="mailto:scottaltonmusic@gmail.com">Get In Touch</a>
           </button>
@@ -344,8 +365,12 @@
             </li>
           </ul>
         </div>
-        <p>&copy; Copyright Scott Alton, 2020</p>
       </div>
+    </section>
+    <footer id="footer" class="container d-flex justify-content-center">
+      <p class="my-2 mt-lg-3 mt-md-0 py-2">
+        &copy; Copyright Scott Alton, 2020
+      </p>
     </footer>
     <!-- JS for Portfolio Section Hover Overlays -->
     <script src="script.js"></script>

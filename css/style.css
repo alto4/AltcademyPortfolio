@@ -2,6 +2,7 @@
   i)
   ii)
 */
+
 html {
   scroll-behavior: smooth;
 }
@@ -22,6 +23,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  background: #08d665;
+}
+
 .bg-dark {
   color: #fff;
   background: #000 !important;
@@ -37,6 +42,38 @@ img {
 #about-section h3 {
   text-decoration: underline;
   text-decoration-color: #08d665;
+}
+
+/* Navbar Styles */
+.navbar a {
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.green {
+  color: #08d665;
+  font-size: 1.8rem;
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid #009438 !important;
+}
+.navbar li.active {
+  border-bottom: 3px solid #08d665 !important;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+  display: flex;
+  align-content: center;
+  margin: auto;
+}
+
+#navbarToggler.show li {
+  text-align: center;
 }
 
 /* Hero Section Styles */
@@ -56,24 +93,6 @@ img {
   opacity: 0.85;
 }
 
-.navbar a {
-  color: #fff;
-}
-
-.navbar li.active {
-  border-bottom: 3px solid #08d665 !important;
-}
-
-.navbar-toggler-icon {
-  color: #08d665;
-}
-
-#navbarToggler.show li {
-  text-align: center;
-}
-
-/* Hero Section Styles */
-
 .hero-text-container {
   max-width: 100%;
   display: flex;
@@ -85,7 +104,15 @@ img {
   text-align: center;
   color: #fff !important;
 }
+
+.hero-lead {
+  font-size: 4rem;
+}
+
 /* Portfolio Section Styles */
+#portfolio-section p {
+  font-size: 20px;
+}
 .bg-light {
   background-color: #fff !important;
 }
@@ -110,10 +137,6 @@ img {
   height: 100%;
   background: #000;
   opacity: 0.75;
-}
-
-button {
-  background: #08d665;
 }
 
 .project .links-overlay button a {
@@ -143,22 +166,22 @@ button {
   font-size: 20px;
 }
 
-/* Footer Styles */
-#footer {
+/* Contact Section Styles */
+#contact-section {
   background-color: #333;
   padding: 20px;
 }
 
-#footer button {
+#contact-section button {
   background-color: #06ad51;
 }
 
-#footer li a i {
+#contact-section li a i {
   width: 20px;
   color: #fff;
 }
 
-#footer li a i:hover {
+#contact-section li a i:hover {
   color: #009438;
   transition: ease-in 0.5s;
 }
@@ -169,7 +192,8 @@ button a {
   font-weight: 700;
 }
 
-button:hover {
+.hero-text button:hover,
+#contact-section button:hover {
   background-color: #009438;
   font-size: 1.2rem;
   transition: ease-in 0.5s;
@@ -183,14 +207,24 @@ button:hover {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #about-section {
     margin: 0 auto !important;
     text-align: center;
   }
 
+  .about-text {
+    margin: none !important;
+    padding: none !important;
+  }
+
   .about-lead {
     padding: 20px 30px;
+    font-size: 2.5rem !important;
     text-align: center;
+  }
+
+  .about-text p {
+    text-align: justify;
   }
 }
