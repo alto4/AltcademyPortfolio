@@ -1,517 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scott Alton | Developer Portfolio</title>
+    <!-- Google Fonts Import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scott Alton | Developer Portfolio</title>
-  <!-- Google Fonts Import -->
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet" />
-  <!-- FontAwesome CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Devicon Icon Library CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
 
-  <!-- Devicon Icon Library CDN -->
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
+    <!-- Bootstrap 4 CDN-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
 
-  <!-- Bootstrap 4 CDN-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-  <!-- Stylesheet Link -->
-  <link rel="stylesheet" type="text/css" href="./css/style.css" />
-</head>
+  <body>
+    <div id="hero-container">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm text-white">
+          <a class="navbar-brand font-weight-bold" href="#"
+            >&lt; S <span class="green">/</span> A &gt;</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon active"
+              ><i class="fa fa-bars fa-lg"></i
+            ></span>
+          </button>
 
-<body>
-  <div id="hero-container">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-sm text-white">
-        <a class="navbar-brand font-weight-bold" href="#">&lt; S <span class="green">/</span> A &gt;</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon active"><i class="fa fa-bars fa-lg"></i></span>
-        </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto mt-2 mt-sm-0">
+              <li class="nav-item active mx-3">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#portfolio-section">Portfolio</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#about-section">About</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Hero Inner Container Ends -->
+        <div class="hero-text-container">
+          <div class="hero-text">
+            <h1 class="hero-lead">I am Scott</h1>
+            <h4 class="my-4">I specialize in full-stack web development.</h4>
+            <button class="btn btn-contact mt-2 px-4">
+              <a
+                href="https://www.linkedin.com/in/scott-alton-6454b4190/"
+                target="_blank"
+                ><i class="fa fa-github"></i
+              ></a>
+            </button>
+            <button class="btn btn-contact mt-2">
+              <a href="#portfolio-section" class="p-3"
+                >View My Work <i class="fa fa-chevron-down"></i
+              ></a>
+            </button>
+            <button class="btn btn-contact mt-2 px-4">
+              <a
+                href="https://www.linkedin.com/in/scott-alton-6454b4190/"
+                target="_blank"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav ml-auto mt-2 mt-sm-0">
-            <li class="nav-item active mx-3">
-              <a class="nav-link" href="#">Home</a>
+    <div class="container bg-dark text-white">
+      <!-- Portfolio Section -->
+      <div class="px-4 py-5" id="portfolio-section">
+        <div class="section-title text-center pt-5 pb-3">
+          <h2 class="font-weight-bold">My Work</h2>
+          <p>Check out some of the projects that I have worked on.</p>
+        </div>
+        <div class="row">
+          <!-- Project 1: Airbnb Newsroom Clone -->
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="project text-center p-4 rounded border border-dark">
+              <h3 class="font-weight-bold">Airbnb Newsroom Clone</h3>
+              <div
+                class="aspect-ratio-box rounded position-relative"
+                style="background-image: url('./images/airbnbclone.jpg');"
+              >
+                <div
+                  id="overlay"
+                  class="links-overlay rounded position-absolute justify-content-center align-items-center"
+                >
+                  <button class="btn mx-2">
+                    <a
+                      href="https://github.com/alto4/AirbnbNewsroomClone"
+                      target="_blank"
+                      >Code</a
+                    >
+                  </button>
+                  <button class="btn mx-2">
+                    <a
+                      href="https://lucid-bartik-623d8c.netlify.app/"
+                      target="_blank"
+                      >Demo</a
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="description p-2">
+                <h4 class="p-2">Technologies Used:</h4>
+                <i class="devicon-html5-plain mx-3"></i>
+                <i class="devicon-css3-plain mx-3"></i>
+                <i class="devicon-bootstrap-plain mx-3"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4: The Next Web Clone -->
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="project text-center p-4 rounded border border-dark">
+              <h3 class="font-weight-bold">The Next Web Clone</h3>
+              <div
+                class="aspect-ratio-box rounded position-relative"
+                style="background-image: url('./images/tnw-thumbnail.jpg');"
+              >
+                <div
+                  id="overlay"
+                  class="links-overlay rounded position-absolute justify-content-center align-items-center"
+                >
+                  <button class="btn mx-2">
+                    <a
+                      href="https://github.com/alto4/TNWResponsiveClone"
+                      target="_blank"
+                      >Code</a
+                    >
+                  </button>
+                  <button class="btn mx-2">
+                    <a
+                      href="https://alto4.github.io/TNWResponsiveClone/"
+                      target="_blank"
+                      >Demo</a
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="description p-2">
+                <h4 class="p-2">Technologies Used:</h4>
+                <i class="devicon-html5-plain mx-3"></i>
+                <i class="devicon-css3-plain mx-3"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5: National Geographic Clone -->
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="project text-center p-4 rounded border border-dark">
+              <h3 class="font-weight-bold">National Geographic Clone</h3>
+              <div
+                class="aspect-ratio-box rounded position-relative"
+                style="background-image: url('./images/natgeo.jpg');"
+              >
+                <div
+                  id="overlay"
+                  class="links-overlay rounded position-absolute justify-content-center align-items-center"
+                >
+                  <button class="btn mx-2">
+                    <a
+                      href="https://github.com/alto4/NatGeoClone"
+                      target="_blank"
+                      >Code</a
+                    >
+                  </button>
+                  <button class="btn mx-2">
+                    <a
+                      href="https://alto4.github.io/NatGeoClone/"
+                      target="_blank"
+                      >Demo</a
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="description p-2">
+                <h4 class="p-2">Technologies Used:</h4>
+                <i class="devicon-html5-plain mx-3"></i>
+                <i class="devicon-css3-plain mx-3"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Project 6: Etch-a-Sketch Project -->
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="project text-center p-4 rounded border border-dark">
+              <h3 class="font-weight-bold">Etch-a-Sketch</h3>
+              <div
+                class="aspect-ratio-box rounded position-relative"
+                style="background-image: url('./images/etchasketch.jpg');"
+              >
+                <div
+                  id="overlay"
+                  class="links-overlay rounded position-absolute justify-content-center align-items-center"
+                >
+                  <button class="btn mx-2">
+                    <a
+                      href="https://github.com/alto4/EtchASketch"
+                      target="_blank"
+                      >Code</a
+                    >
+                  </button>
+                  <button class="btn mx-2">
+                    <a
+                      href="https://alto4.github.io/EtchASketch/"
+                      target="_blank"
+                      >Demo</a
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="description p-2">
+                <h4 class="p-2">Technologies Used:</h4>
+                <i class="devicon-html5-plain mx-3"></i>
+                <i class="devicon-css3-plain mx-3"></i>
+                <i class="devicon-javascript-plain mx-3"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Project 7: Library Project -->
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="project text-center p-4 rounded border border-dark">
+              <h3 class="font-weight-bold">Library App</h3>
+              <div
+                class="aspect-ratio-box rounded position-relative"
+                style="background-image: url('./images/library.jpg');"
+              >
+                <div
+                  id="overlay"
+                  class="links-overlay rounded position-absolute justify-content-center align-items-center"
+                >
+                  <button class="btn mx-2">
+                    <a href="#" target="_blank">Code</a>
+                  </button>
+                  <button class="btn mx-2">
+                    <a href="https://alto4.github.io/Library/" target="_blank"
+                      >Demo</a
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="description p-2">
+                <h4 class="p-2">Technologies Used:</h4>
+                <i class="devicon-html5-plain mx-3"></i>
+                <i class="devicon-css3-plain mx-3"></i>
+                <i class="devicon-javascript-plain mx-3"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Project 8: TicTacToe Project -->
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="project text-center p-4 rounded border border-dark">
+              <h3 class="font-weight-bold">Tic-Tac-Toe</h3>
+              <div
+                class="aspect-ratio-box rounded position-relative"
+                style="background-image: url('./images/tictactoe.jpg');"
+              >
+                <div
+                  id="overlay"
+                  class="links-overlay rounded position-absolute justify-content-center align-items-center"
+                >
+                  <button class="btn mx-2">
+                    <a href="https://github.com/alto4/TicTacToe" target="_blank"
+                      >Code</a
+                    >
+                  </button>
+                  <button class="btn mx-2">
+                    <a href="https://alto4.github.io/TicTacToe/" target="_blank"
+                      >Demo</a
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="description p-2">
+                <h4 class="p-2">Technologies Used:</h4>
+                <i class="devicon-html5-plain mx-3"></i>
+                <i class="devicon-css3-plain mx-3"></i>
+                <i class="devicon-javascript-plain mx-3"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Project 9: Movie Finder Project -->
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="project text-center p-4 rounded border border-dark">
+              <h3 class="font-weight-bold">Movie Finder App</h3>
+              <div
+                class="aspect-ratio-box rounded position-relative"
+                style="background-image: url('./images/movieapp.jpg');"
+              >
+                <div
+                  id="overlay"
+                  class="links-overlay rounded position-absolute justify-content-center align-items-center"
+                >
+                  <button class="btn mx-2">
+                    <a
+                      href="https://github.com/alto4/MovieFinder"
+                      target="_blank"
+                      >Code</a
+                    >
+                  </button>
+                  <button class="btn mx-2">
+                    <a
+                      href="https://alto4.github.io/MovieFinder/"
+                      target="_blank"
+                      >Demo</a
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="description p-2">
+                <h4 class="p-2">Technologies Used:</h4>
+                <i class="devicon-html5-plain mx-3"></i>
+                <i class="devicon-css3-plain mx-3"></i>
+                <i class="devicon-javascript-plain mx-3"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Project 10: Shopping Cart Project -->
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="project text-center p-4 rounded border border-dark">
+              <h3 class="font-weight-bold">Shopping Cart</h3>
+              <div
+                class="aspect-ratio-box rounded position-relative"
+                style="background-image: url('./images/shoppingcart.jpg');"
+              >
+                <div
+                  id="overlay"
+                  class="links-overlay rounded position-absolute justify-content-center align-items-center"
+                >
+                  <button class="btn mx-2">
+                    <a
+                      href="https://github.com/alto4/ShoppingCart"
+                      target="_blank"
+                      >Code</a
+                    >
+                  </button>
+                  <button class="btn mx-2">
+                    <a
+                      href="https://alto4.github.io/ShoppingCart/"
+                      target="_blank"
+                      >Demo</a
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="description p-2">
+                <h4 class="p-2">Technologies Used:</h4>
+                <i class="devicon-html5-plain mx-3"></i>
+                <i class="devicon-css3-plain mx-3"></i>
+                <i class="devicon-javascript-plain mx-3"></i>
+                <i class="devicon-jquery-plain mx-3"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Project 11: To-Do List Project -->
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="project text-center p-4 rounded border border-dark">
+              <h3 class="font-weight-bold">To-Do List</h3>
+              <div
+                class="aspect-ratio-box rounded position-relative"
+                style="background-image: url('./images/todoapp.jpg');"
+              >
+                <div
+                  id="overlay"
+                  class="links-overlay rounded position-absolute justify-content-center align-items-center"
+                >
+                  <button class="btn mx-2">
+                    <a
+                      href="https://github.com/alto4/RESTfulToDo"
+                      target="_blank"
+                      >Code</a
+                    >
+                  </button>
+                  <button class="btn mx-2">
+                    <a
+                      href="https://sleepy-fermi-a7d29e.netlify.app/"
+                      target="_blank"
+                      >Demo</a
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="description p-2">
+                <h4 class="p-2">Technologies Used:</h4>
+                <i class="devicon-html5-plain mx-3"></i>
+                <i class="devicon-css3-plain mx-3"></i>
+                <i class="devicon-javascript-plain mx-3"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Project 12: 10-Second Math Project -->
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="project text-center p-4 rounded border border-dark">
+              <h3 class="font-weight-bold">10-Second Math Game</h3>
+              <div
+                class="aspect-ratio-box rounded position-relative"
+                style="background-image: url('./images/10SecMath.jpg');"
+              >
+                <div
+                  id="overlay"
+                  class="links-overlay rounded position-absolute justify-content-center align-items-center"
+                >
+                  <button class="btn mx-2">
+                    <a href="https://github.com/alto4/10SecMath">Code</a>
+                  </button>
+                  <button class="btn mx-2">
+                    <a href="https://alto4.github.io/10SecMath/">Demo</a>
+                  </button>
+                </div>
+              </div>
+              <div class="description p-2">
+                <h4 class="p-2">Technologies Used:</h4>
+                <i class="devicon-html5-plain mx-3"></i>
+                <i class="devicon-css3-plain mx-3"></i>
+                <i class="devicon-javascript-plain mx-3"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="text-dark bg-light p-5" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="pt-5 pb-3 px-1 about-text">
+              <h3 class="font-weight-bold px-2 px-xl-0">About Me</h3>
+              <h1 class="about-lead my-4 px-2 px-xl-0">
+                I love to build<br />things from the<br />ground up.
+              </h1>
+              <p class="px-2 px-xl-0">
+                Ever since I can remember, I have always enjoyed creating things
+                from scratch. This has led me to work as both a professional
+                musician and as a chef, where I have always enjoyed making
+                things that make people happier and allow me to express myself
+                in a creative and tangible way. My first encounter with coding
+                immediately ignited a desire to pursue web development as a
+                career, and this desire stems from the same drive to create
+                things from scratch.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="./images/banner.jpg"
+              alt="A picture of Scott Alton."
+              class="rounded-circle"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="w-100 py-5">
+      <div class="container text-center">
+        <div
+          class="d-flex justify-content-between align-items-center px-2 px-xl-0"
+        >
+          <button class="btn btn-contact">
+            <a href="mailto:scottaltonmusic@gmail.com">Get In Touch</a>
+          </button>
+          <ul class="icons d-flex list-unstyled px-4">
+            <li class="mr-5">
+              <a href="https://github.com/alto4" target="_blank"
+                ><i class="fa fa-github fa-2x"></i
+              ></a>
             </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#portfolio-section">Portfolio</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#about-section">About</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#footer">Contact</a>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/scott-alton-6454b4190/"
+                target="_blank"
+                ><i class="fa fa-linkedin fa-2x"></i
+              ></a>
             </li>
           </ul>
         </div>
-      </nav>
-      <!-- Hero Inner Container Ends -->
-      <div class="hero-text-container">
-        <div class="hero-text">
-          <h1 class="hero-lead">I am Scott</h1>
-          <h4 class="my-4">I specialize in full-stack web development.</h4>
-          <button class="btn btn-contact mt-2 px-4">
-            <a href="https://www.linkedin.com/in/scott-alton-6454b4190/" target="_blank"><i
-                class="fa fa-github"></i></a>
-          </button>
-          <button class="btn btn-contact mt-2">
-            <a href="#portfolio-section" class="p-3">View My Work <i class="fa fa-chevron-down"></i></a>
-          </button>
-          <button class="btn btn-contact mt-2 px-4">
-            <a href="https://www.linkedin.com/in/scott-alton-6454b4190/" target="_blank"><i
-                class="fa fa-linkedin"></i></a>
-          </button>
-        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="container bg-dark text-white">
-    <!-- Portfolio Section -->
-    <div class="px-4 py-5" id="portfolio-section">
-      <div class="section-title text-center pt-5 pb-3">
-        <h2 class="font-weight-bold">My Work</h2>
-        <p>Check out some of the projects that I have worked on.</p>
-      </div>
-      <div class="row">
-        <!-- Project 1: Airbnb Newsroom Clone -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">Airbnb Newsroom Clone</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/airbnbclone.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="https://github.com/alto4/AirbnbNewsroomClone" target="_blank">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="https://lucid-bartik-623d8c.netlify.app/" target="_blank">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-              <i class="devicon-bootstrap-plain mx-3"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Project 4: The Next Web Clone -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">The Next Web Clone</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/tnw-thumbnail.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="https://github.com/alto4/TNWResponsiveClone" target="_blank">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="https://alto4.github.io/TNWResponsiveClone/" target="_blank">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Project 5: National Geographic Clone -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">National Geographic Clone</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/natgeo.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="https://github.com/alto4/NatGeoClone" target="_blank">Code</a>
-                </button>
-                <button class=" btn mx-2">
-                  <a href="https://alto4.github.io/NatGeoClone/" target="_blank">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Project 6: Etch-a-Sketch Project -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">Etch-a-Sketch</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/etchasketch.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="https://github.com/alto4/EtchASketch" target="_blank">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="https://alto4.github.io/EtchASketch/" target="_blank">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-              <i class="devicon-javascript-plain mx-3"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Project 7: Library Project -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">Library App</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/library.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="#" target="_blank">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="https://alto4.github.io/Library/" target="_blank">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-              <i class="devicon-javascript-plain mx-3"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Project 8: TicTacToe Project -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">Tic-Tac-Toe</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/tictactoe.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="https://github.com/alto4/TicTacToe" target="_blank">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="https://alto4.github.io/TicTacToe/" target="_blank">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-              <i class="devicon-javascript-plain mx-3"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Project 9: Movie Finder Project -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">Movie Finder App</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/movieapp.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="https://github.com/alto4/MovieFinder" target="_blank">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="https://alto4.github.io/MovieFinder/" target="_blank">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-              <i class="devicon-javascript-plain mx-3"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Project 10: Shopping Cart Project -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">Shopping Cart</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/shoppingcart.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="https://github.com/alto4/ShoppingCart" target="_blank">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="https://alto4.github.io/ShoppingCart/" target="_blank">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-              <i class="devicon-javascript-plain mx-3"></i>
-              <i class="devicon-jquery-plain mx-3"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Project 11: To-Do List Project -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">To-Do List</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/todoapp.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="https://github.com/alto4/RESTfulToDo" target="_blank">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="https://alto4.github.io/RESTfulToDo/" target="_blank">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-              <i class="devicon-javascript-plain mx-3"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Project 12: 10-Second Math Project -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">10-Second Math Game</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/10SecMath.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="https://github.com/alto4/10SecMath">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="https://alto4.github.io/10SecMath/">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-              <i class="devicon-javascript-plain mx-3"></i>
-            </div>
-          </div>
-        </div>`
-        <!-- Project 4: Future Project -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">Future Project</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/future-project.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="#">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="#">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-              <i class="devicon-javascript-plain mx-3"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Project 4: Future Project -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">Future Project</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/future-project.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="#">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="#">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-              <i class="devicon-javascript-plain mx-3"></i>
-            </div>
-          </div>
-          <!-- Future Project Templates -->
-        </div><!-- Project NEXT: Future Project -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">Future Project</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/future-project.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="#">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="#">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-              <i class="devicon-javascript-plain mx-3"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Project 5: Future Project -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">Future Project</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/future-project.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="#">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="#">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-              <i class="devicon-javascript-plain mx-3"></i>
-              <i class="devicon-react-plain mx-3"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Project 6: Future Project -->
-        <div class="col-md-6 col-lg-4 my-3">
-          <div class="project text-center p-4 rounded border border-dark">
-            <h3 class="font-weight-bold">Future Project</h3>
-            <div class="aspect-ratio-box rounded position-relative"
-              style="background-image: url('./images/future-project.jpg');">
-              <div id="overlay"
-                class="links-overlay rounded position-absolute justify-content-center align-items-center">
-                <button class="btn mx-2">
-                  <a href="#">Code</a>
-                </button>
-                <button class="btn mx-2">
-                  <a href="#">Demo</a>
-                </button>
-              </div>
-            </div>
-
-            <div class="description p-2">
-              <h4 class="p-2">Technologies Used:</h4>
-              <i class="devicon-html5-plain mx-3"></i>
-              <i class="devicon-css3-plain mx-3"></i>
-              <i class="devicon-react-plain mx-3"></i>
-              <i class="devicon-ruby-plain mx-3"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- About Section -->
-  <section class="text-dark bg-light p-5" id="about-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="pt-5 pb-3 px-1 about-text">
-            <h3 class="font-weight-bold px-2 px-xl-0">About Me</h3>
-            <h1 class="about-lead my-4 px-2 px-xl-0">
-              I love to build<br />things from the<br />ground up.
-            </h1>
-            <p class="px-2 px-xl-0">
-              Ever since I can remember, I have always enjoyed creating things
-              from scratch. This has led me to work as both a professional
-              musician and as a chef, where I have always enjoyed making
-              things that make people happier and allow me to express myself
-              in a creative and tangible way. My first encounter with coding
-              immediately ignited a desire to pursue web development as a
-              career, and this desire stems from the same drive to create
-              things from scratch.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 d-flex justify-content-center align-items-center">
-          <img src="./images/banner.jpg" alt="A picture of Scott Alton." class="rounded-circle" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact-section" class="w-100 py-5">
-    <div class="container text-center">
-      <div class="d-flex justify-content-between align-items-center px-2 px-xl-0">
-        <button class="btn btn-contact">
-          <a href="mailto:scottaltonmusic@gmail.com">Get In Touch</a>
-        </button>
-        <ul class="icons d-flex list-unstyled px-4">
-          <li class="mr-5">
-            <a href="https://github.com/alto4" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/scott-alton-6454b4190/" target="_blank"><i
-                class="fa fa-linkedin fa-2x"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="footer" class="container d-flex justify-content-center">
-    <p class="my-2 mt-lg-3 mt-md-0 py-2">
-      &copy; Copyright Scott Alton, 2020
-    </p>
-  </footer>
-  <!-- JS for Portfolio Section Hover Overlays -->
-  <script src="script.js"></script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-  </script>
-</body>
-
+    <!-- Footer -->
+    <footer id="footer" class="container d-flex justify-content-center">
+      <p class="my-2 mt-lg-3 mt-md-0 py-2">
+        &copy; Copyright Scott Alton, 2020
+      </p>
+    </footer>
+    <!-- JS for Portfolio Section Hover Overlays -->
+    <script src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
